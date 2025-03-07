@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+h1, h2 {
+    color: #f4b400;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+footer {
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.boton-redireccion img {
+    transition: transform 0.3s;
+}
+
+.boton-redireccion img:hover {
+    transform: scale(1.2);
+}
