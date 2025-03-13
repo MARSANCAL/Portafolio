@@ -10,10 +10,10 @@
 </head>
 <body>
     <header>
-        <p>
-            <img src="img/foto.png" width=45px height=40px>
-        </p>
         <h1>Matías Sandoval</h1>
+        <p>
+            <img src="img/foto.png" max-width=300px height=300px>
+        </p>
         <p>Ingeniero en Informática | Desarrollo de Software | Gestión de Proyectos</p>
     </header>
     <section id="about">
@@ -30,9 +30,36 @@
             <li>Bases de Datos (SQL)</li>
         </ul>
     </section>
-    <section id="projects">
-        <h2>Proyectos</h2>
-        <p>Próximamente incluiré una sección con mis proyectos destacados.</p>
+ 
+    <section id="proyectos">
+        <h2>Mis Proyectos</h2>
+        <div class="proyectos-container">
+
+            <div class="proyecto" >
+                 <a href="https://github.com/MiguelAHM99/Grupo01_Capstone_07D" class="boton-redireccion">
+                    <img alt="geotransporte" src="img/geotransporte.png" width=45px height=40px> 
+                </a>
+                <h3>GeoTranspote</h3>
+                <p>Aplicacion Movil para administracion, gestion y seguimiento de servicios de transporte idealmente publico.<br>(Tesis-Proyecto Finalizado)</p>
+            </div>
+
+            <div class="proyecto" >
+                <a href="https://github.com/lastdonapp/lastdon" class="boton-redireccion" onclick="mostrarDetalles(this)">
+                    <img alt="lastdon" src="img/lastdon-logo.jpg" width=45px height=40px> 
+                </a>                
+                <h3>LastDon</h3>
+                <p>Aplicacion Movil para administracion, gestion, seguimiento, pagos y devoluciones de encomiendas dentro de la region Metropolitana.<br>(Practica Laboral- Proyecto sin finalizar)</p>
+            </div>
+
+            <div class="proyecto">
+                <a href="https://github.com/MARSANCAL/zona_market" class="boton-redireccion">
+                    <img alt="zonamarket" src="img/zonamarket.png" width=45px height=40px> 
+                </a>                          
+                <h3>Zona Market</h3>
+                <p>Aplicacion Movil para agregar o crear puntos de ventas de diversos locales con contacto y productos.(Personal- Proyecto sin Finalizar)</p>
+            </div>
+
+        </div>
     </section>
 
 </body>
@@ -52,3 +79,9 @@
     </a>
 </footer>
 </html>
+
+<script>
+    function mostrarDetalles(elemento) {
+        alert("Detalles del proyecto: " + elemento.querySelector("h3").innerText);
+    }
+</script>

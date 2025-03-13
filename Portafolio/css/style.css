@@ -39,3 +39,32 @@ footer {
 .boton-redireccion img:hover {
     transform: scale(1.2);
 }
+
+#proyectos {
+    text-align: center;
+    padding: 50px;
+}
+.proyectos-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.proyecto {
+    width: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+.proyecto:hover {
+    transform: scale(1.05);
+}
+.proyecto img {
+    width: 100%;
+    height: auto;
+}
+.proyecto h3 {
+    margin: 10px 0;
+}
